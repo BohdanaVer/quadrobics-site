@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зграя — Знайти своїх</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Головна</a> | 
+            <a href="about.html"><i class="fas fa-info-circle"></i> Про квадробінг</a> | 
+            <a href="guide.html"><i class="fas fa-book-reader"></i> Правила та етика</a> | 
+            <a href="influencers.html"><i class="fas fa-star"></i> Зірки спорту</a> | 
+            <a href="mask.html"><i class="fas fa-mask"></i> Майстерня</a> | 
+            <a href="community.html"><i class="fas fa-users"></i> Зграя</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="community-intro">
+            <h1><i class="fas fa-users"></i> Пошук однодумців</h1>
+            <img src="resources/community_hero.png" alt="Зустріч зграї у парку" width="100%">
+            <p>Бути частиною зграї — це про підтримку, спільні тренування та обмін досвідом. Квадробіка стає драйвовішою, коли ти не один. Заповнюй анкету нижче, щоб заявити про себе та знайти друзів у своєму місті!</p>
+        </section>
+
+        <hr>
+
+        <section id="registration">
+            <h2><i class="fas fa-user-plus"></i> Приєднатися до бази</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Твоя анкета</legend>
+                    
+                    <label for="fname">Нікнейм:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Твоє ім'я у зграї" required><br><br>
+
+                    <label for="animal">Тварина (Теріотип):</label><br>
+                    <input type="text" id="animal" name="animal" placeholder="Наприклад: Сірий вовк"><br><br>
+
+                    <label>Твій рівень у квадробіці:</label><br>
+                    <input type="radio" id="novice" name="level" value="novice" checked>
+                    <label for="novice">Новачок</label><br>
+                    <input type="radio" id="middle" name="level" value="middle">
+                    <label for="middle">Середній</label><br>
+                    <input type="radio" id="pro" name="level" value="pro">
+                    <label for="pro">Профі / Теріан</label><br><br>
+
+                    <label for="city">Місто:</label><br>
+                    <select id="city" name="city">
+                        <option value="vn">Вінниця</option>
+                        <option value="kyiv">Київ</option>
+                        <option value="lv">Львів</option>
+                        <option value="od">Одеса</option>
+                        <option value="kh">Харків</option>
+                    </select><br><br>
+
+                    <label for="contacts">Мої контакти (необов'язково):</label><br>
+                    <textarea id="contacts" name="contacts" rows="3" cols="30" placeholder="Інстаграм - @..., Телеграм - @..."></textarea>
+                    <br><br>
+
+                    <button type="submit">Додати себе до списку</button>
+                    <button type="reset">Очистити</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="members-list">
+            <h2><i class="fas fa-list-ul"></i> Учасники зграї</h2>
+            <p>Ось ті, хто вже з нами. Ти можеш знайти когось зі свого міста для спільних вилазок у парк.</p>
+            
+            <table border="1" width="100%">
+                <caption>Діюча база учасників</caption>
+                <thead>
+                    <tr>
+                        <th>Нікнейм</th>
+                        <th>Теріотип</th>
+                        <th>Місто</th>
+                        <th>Рівень</th>
+                        <th>Контакти</th> </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ShadowWolf</td>
+                        <td>Чорний вовк</td>
+                        <td>Вінниця</td>
+                        <td>Профі</td>
+                        <td>TG: @shadow_vntu</td>
+                    </tr>
+                    <tr>
+                        <td>Foxie_Tail</td>
+                        <td>Руда лисиця</td>
+                        <td>Київ</td>
+                        <td>Середній</td>
+                        <td>Inst: @foxie_quad</td>
+                    </tr>
+                    <tr>
+                        <td>Luna_Cat</td>
+                        <td>Сніжний барс</td>
+                        <td>Львів</td>
+                        <td>Новачок</td>
+                        <td>—</td> </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 Quadrobics Ukraine. Твоя зграя чекає на тебе. <i class="fas fa-heart"></i></p>
+    </footer>
+</body>
+</html>
